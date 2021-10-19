@@ -69,8 +69,8 @@ app.post('/api/forgotpassword', async (req, res) => {
         to: email,
         from: 'azadrohan2001@gmail.com',
         subject: 'Hello from azadrohan',
-        text: `use this endpoint to update password - localhost:3000/api/reset/${user._id}`,
-        html: `<h4>use this endpoint to update password - localhost:3000/api/reset/${user._id}</h4>`,
+        text: `use this endpoint to update password - https://rocky-dusk-09700.herokuapp.com//api/reset/${user._id}`,
+        html: `<h4>use this endpoint to update password - https://rocky-dusk-09700.herokuapp.com//api/reset/${user._id}</h4>`,
       }
 
       sgMail
