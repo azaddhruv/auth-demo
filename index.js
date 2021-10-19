@@ -23,6 +23,12 @@ async function main() {
   await mongoose.connect(dbUrl)
 }
 
+app.get('/', (req, res) => {
+  res.send(
+    'Hello Welcome to my api, quick tour, at /api/signup and include username email and password for register. At /api/login send username and password. At /api/forgotpassword send registered email to recieve reset mail and send your new password as password only to that link to change password.  '
+  )
+})
+
 app.post('/api/signup', signupValidate, async (req, res) => {
   try {
     const { username, email, password } = req.body
